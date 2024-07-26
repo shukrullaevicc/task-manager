@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   scroll-behavior: smooth;
+}
+
+.logo__sider{
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 15px;
+   font-size: 30px;
+}
+
+/* Task Form */
+.task-form {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 24px;
+}
+
+.task-form .ant-input {
+   margin-bottom: 8px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-form .ant-btn {
+   border-radius: 8px;
+   transition: background-color 0.3s;
+}
+
+.task-form .ant-btn:hover {
+   background-color: #1890ff;
+   color: #fff;
+}
+
+/* Sort and Filter */
+.sort-filter {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+
+.sort-filter .ant-select {
+   width: 48%;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort-filter .ant-select .ant-select-selector {
+   border-radius: 8px;
+}
+
+/* Todo List */
+.task__list .task-item {
+   padding: 16px;
+   border-radius: 8px;
+   margin-bottom: 12px;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.task__list .task-item:hover {
+   background-color: #e6f7ff;
+   transform: scale(1.02);
+}
+
+.task__list .task-item.completed {
+   background-color: #d9f7be;
+}
+
+.task__list .task-item.completed .ant-typography {
+   text-decoration: line-through;
+}
+
+.task__list .task-item .complate {
+   color: #52c41a;
+}
+
+.task__list .task-item .complate:hover {
+   color: #389e0d;
+}
+
+.task__list .task-item .delete {
+   color: #ff4d4f;
+}
+
+.task__list .task-item .delete:hover {
+   color: #d9363e;
+}

@@ -1,0 +1,20 @@
+.ant-menu-item:has(.activ){
+   color: #fff;
+   background-color: #1677ff;
+}
+
+.ant-layout-sider-children{
+   display: flex;
+   flex-direction: column;
+}
+
+.logo__sider{
+   text-align: center;
+   margin-top: 15px;
+}
+
+.logo{
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+}
